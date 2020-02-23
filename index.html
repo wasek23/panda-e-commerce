@@ -6,18 +6,146 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Panda | eCommerce Website</title>
 
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="style.css" />
 
 		<link rel="icon" type="image/png" href="img/favicon.ico" />
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	</head>
 	<body>
+		<header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+			    <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shoes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Backpack</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- Container -->
+            </nav> <!-- Navbar -->
+        </header> <!-- Header -->
+        
+        <section id="slider">
+            <div class="container">
+                <div class="carousel slide" data-ride="carousel" id="carouselSlider">
+                    <ul class="carousel-indicators">
+                        <li data-target="#carouselSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselSlider" data-slide-to="1"></li>
+                        <li data-target="#carouselSlider" data-slide-to="2"></li>
+                    </ul> <!-- Carousel Indicators -->
+                    
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h1 class="text-uppercase">Mi LED TV 4A pro 32</h1>
+                                    <p>Best Mi TV for watch the world. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officia doloremque iste quaerat labore minima velit.</p>
+                                    <h2 class="price">$ 1200</h2>
+                                    <button class="btn buyNowBtn mb-5 mb-md-5">Buy now &gt;&gt;</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="img/slider/tv.png" alt="TV" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h1 class="text-uppercase">Ear Bud Warmer</h1>
+                                    <p>Headphone for listen everything. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officia doloremque iste quaerat labore minima velit.</p>
+                                    <h2 class="price">$ 420</h2>
+                                    <button class="btn buyNowBtn mb-5 mb-md-5">Buy now >></button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="img/slider/headphone.png" alt="Headphone" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h1 class="text-uppercase">X-box to waste time</h1>
+                                    <p>Waste your time on gaming. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officia doloremque iste quaerat labore minima velit.</p>
+                                    <h2 class="price">$ 600</h2>
+                                    <button class="btn buyNowBtn mb-5 mb-md-5">Buy now &gt;&gt;</button>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="img/slider/xbox.png" alt="XBox" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--Carousel Inner-->
+                    
+                    <a href="#carouselSlider" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a> <!-- Carousel Control left -->
+                    
+                    <a href="#carouselSlider" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a> <!-- Carousel Control right -->
+
+                </div><!--Carousel-->
+            </div> <!-- Container -->
+        </section> <!-- Slider -->
+
+        <section id="categories">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="p-4 p-md-3 p-lg-4 d-flex justify-content-between align-items-center cat cat1">
+                            <h2 class="text-white">Watch</h2>
+
+                            <img src="img/categories/watch.png" alt="Watch" class="img-fluid" />
+                        </div>
+                    </div> <!-- Col -->
+
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="p-4 p-md-3 p-lg-4 d-flex justify-content-between align-items-center cat cat2">
+                            <h2 class="text-white">Bag</h2>
+
+                            <img src="img/categories/bag.png" alt="Bag" class="img-fluid" />
+                        </div>
+                    </div> <!-- Col -->
+
+                    <div class="col-md-4">
+                        <div class="p-4 p-md-3 p-lg-4 d-flex justify-content-between align-items-center cat cat3">
+                            <h2 class="text-white">Shoes</h2>
+
+                            <img src="img/categories/shoes.png" alt="Shoes" class="img-fluid" />
+                        </div>
+                    </div> <!-- Col -->
+                </div> <!-- Row -->
+            </div> <!-- Container -->
+        </section> <!-- Categories -->
+
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+			$('.carousel').carousel({
+				interval: 4500,
+				pause: false
+			});
+		</script>
 	</body>
 </html>

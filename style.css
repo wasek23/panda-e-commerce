@@ -1,0 +1,98 @@
+#header,
+#slider,
+#categories{
+    margin-bottom: 100px;
+}
+
+/* Carousel */
+.carousel-indicators li{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+}
+
+.carousel-item{
+    background-color: #fceae8;
+    padding: 20px 5%;
+    border-radius: 10px;
+}
+
+.carousel-control-prev{
+    width: 5%;
+    text-align: right;
+    justify-content: flex-end;
+}
+.carousel-control-next{
+    width: 5%;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.price{
+    color: #ff136f;
+}
+
+.buyNowBtn{
+    background-image: linear-gradient(to bottom right, #ff589b, #ff136f);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+
+    animation: gradient-toggle 2.5s infinite;
+}
+
+.buyNowBtn:hover,
+.buyNowBtn:focus{
+    background-image: linear-gradient(to bottom right, #ff136f, #ff589b);
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 30px 1px #ff136f;
+}
+
+@keyframes gradient-toggle{
+    0%{
+        
+    }
+    50%{
+        background-image: linear-gradient(to bottom right, #ff136f, #ff589b);
+        color: #fff;
+        outline: none;
+        box-shadow: 0 0 30px 1px #ff136f;
+    }
+}
+
+/* Categories */
+.cat{
+    border-radius: 10px;
+
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.cat:hover{
+    box-shadow: 0 5px 15px 0px #999;
+    transform: translateY(-5px);
+}
+
+.cat img{
+    width: 100px;
+}
+
+.cat1{
+    background-image: linear-gradient(to right, #ffaa00, #ffee00);
+}
+.cat2{
+    background-image: linear-gradient(to bottom, #ff589b, #ff136f);
+}
+.cat3{
+    background-image: linear-gradient(to right, #00aaff, #0066ff);
+}
+
+
+
+
+
