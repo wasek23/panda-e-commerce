@@ -1,15 +1,87 @@
-#header,
-#slider,
-#categories{
-    margin-bottom: 100px;
+/* Base */
+html{
+    scroll-behavior: smooth;
+}
+
+#header{
+    margin-bottom: 50px;
+}
+section{
+    padding: 20px 0 80px 0;
+}
+
+/* Utilitis */
+.price{
+    color: #ff136f;
+    font-weight: 100;
+    font-size: 32px;
+}
+
+.btn{
+    background-image: linear-gradient(to bottom right, #ff589b, #ff136f);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.btn:hover{
+    color: #fff;
+}
+
+.myBtn{
+    margin-top: 20px;
+
+    -webkit-animation: gradient-toggle 2.5s infinite;
+    animation: gradient-toggle 2.5s infinite;
+}
+
+@-webkit-keyframes gradient-toggle{
+    0%{
+        color: #fff;
+    }
+    50%{
+        background-image: linear-gradient(to bottom right, #ff136f, #ff589b);
+        color: #fff;
+        outline: none;
+        box-shadow: 0 0 30px 1px #ff136f;
+    }
+    100%{
+        color: #fff;
+    }
+}
+@keyframes gradient-toggle{
+    0%{
+        color: #fff;
+    }
+    50%{
+        background-image: linear-gradient(to bottom right, #ff136f, #ff589b);
+        color: #fff;
+        outline: none;
+        box-shadow: 0 0 30px 1px #ff136f;
+    }
+    100%{
+        color: #fff;
+    }
 }
 
 /* Carousel */
 .carousel-indicators li{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #bbb;
+    height: 8px;
+    width: 15px;
+    border-radius: 100px;
+    border: none;
+    background-color: #fff;
+    opacity: 1;
+
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.carousel-indicators li.active{
+    width: 25px;
+    background-color: #ff136f;
 }
 
 .carousel-item{
@@ -29,43 +101,6 @@
     justify-content: flex-start;
 }
 
-.price{
-    color: #ff136f;
-}
-
-.buyNowBtn{
-    background-image: linear-gradient(to bottom right, #ff589b, #ff136f);
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-top: 20px;
-
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-
-    animation: gradient-toggle 2.5s infinite;
-}
-
-.buyNowBtn:hover,
-.buyNowBtn:focus{
-    background-image: linear-gradient(to bottom right, #ff136f, #ff589b);
-    color: #fff;
-    outline: none;
-    box-shadow: 0 0 30px 1px #ff136f;
-}
-
-@keyframes gradient-toggle{
-    0%{
-        
-    }
-    50%{
-        background-image: linear-gradient(to bottom right, #ff136f, #ff589b);
-        color: #fff;
-        outline: none;
-        box-shadow: 0 0 30px 1px #ff136f;
-    }
-}
-
 /* Categories */
 .cat{
     border-radius: 10px;
@@ -74,7 +109,7 @@
     transition: all .2s ease;
 }
 .cat:hover{
-    box-shadow: 0 5px 15px 0px #999;
+    box-shadow: 0 5px 15px 0px #d3d3d3;
     transform: translateY(-5px);
 }
 
@@ -92,7 +127,51 @@
     background-image: linear-gradient(to right, #00aaff, #0066ff);
 }
 
+/* Card */
+.card{
+    width: 32%;
+    border: none;
+    box-shadow: 0 5px 10px 2px #d3d3d3;
 
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.card:hover{
+    box-shadow: 0 5px 15px 3px #d3d3d3;
+}
 
+.card .card-footer{
+    border-top: none;
+    background-color: #fff;
+}
 
+@media only screen and (max-width: 767px){
+    .cardsWrap{
+        display: block!important;
+    }
 
+    .card{
+        width: 100%;
+    }
+}
+
+/* Subscribe */
+#subscribe .container{
+    background-color: #fceae8;
+    height: 350px;
+    border-radius: 10px;
+}
+
+/* Footer */
+#footer .link{
+    text-decoration: none;
+    color: #ff136f;
+    text-transform: uppercase;
+
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#footer .link:hover{
+    text-shadow: 2px 5px 10px #d3d3d3;
+}
