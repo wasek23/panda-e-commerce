@@ -26,8 +26,12 @@ section{
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-.btn:hover{
+.btn:hover,
+.btn:visited,
+.btn:focus,
+.btn:active{
     color: #fff;
+    outline: none;
 }
 
 .myBtn{
